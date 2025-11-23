@@ -7,7 +7,7 @@ import chatbox from './pages/chatbox'
 import connections from './pages/connections'
 import discover from './pages/discover'
 import profile from './pages/profile'
-import createpost from './pages/createpost'
+
 
 const app = () => {
   return (
