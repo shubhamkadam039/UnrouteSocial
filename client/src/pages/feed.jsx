@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { dummyPostsData } from '../assets/assets'
 
-const feed = () => {
-  return (
-    <div>feed</div>
+const Feed = () => {
+
+  const[feeds, setfeeds] = useState([])
+  const[loading, setLoading] = useState(true)
+
+  const fetchFeeds = async () => {
+    setfeeds(dummyPostsData)
+  }
+
+  useEffect(()=>{
+    fetchFeeds
+  },[])
+
+  return !loading(
+    <div>
+
+    </div>
   )
 }
 
