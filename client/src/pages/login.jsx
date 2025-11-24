@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import { Star } from 'lucide-react'
+import { SignIn } from '@clerk/clerk-react';
 
 const Login = () => {
   console.log('bg:', assets.bgImage)
@@ -36,7 +37,7 @@ const Login = () => {
       </div>
       {/* Right side : Login Form */}
       <div className='flex-1 flex items-center justify-center p-6 sm:p-10'>
-        
+             <SignIn/>
       </div>
    </div>
   )

@@ -8,13 +8,15 @@ import Connections from './pages/Connections'
 import Discover from './pages/Discover'
 import Profile from './pages/Profile'
 import Createpost from './pages/Createpost'
-
+import { useUser } from '@clerk/clerk-react'
+import Layout from './pages/Layout'
 
 const app = () => {
+  const {user} = useUser()
   return (
     <>
      <Routes>
-        <Route path ='/' element ={<Login/>}>
+        <Route path ='/' element ={ !user ? <Login/> : <Layout/>}>
           <Route index element ={<Feed/>}/>
           <Route path='Messages' element ={<Messages/>}/>
           <Route path='Messages/:userid' element ={<ChatBox/>}/>
