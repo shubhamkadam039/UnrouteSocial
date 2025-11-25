@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route, Routes} from 'react-router-dom'
 import Login from './pages/Login'
-import Feed from './pages/Feed'
+import Feed from './pages/feed'
 import Messages from './pages/Messages'
 import ChatBox from './pages/chatbox'
 import Connections from './pages/Connections'
