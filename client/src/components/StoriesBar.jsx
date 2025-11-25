@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { dummyStoriesData } from '../assets/assets'
 import { Plus } from 'lucide-react'
+import moment from 'moment'
 
 const Storiesbar = () => {
 
@@ -29,11 +30,24 @@ const Storiesbar = () => {
             {/* Story Cards */}
             {
                 stories.map((story, index)=> (
-                    <div key={index} className={'relative rounded-lg shadow min-w-30 max-w-30 max-h-40 cursor-pointer hover:shadow lg transition-all duration-200 bg-linear-to-b from-orange500 to=orange-600 hover:from-roange-700 to-orange-800 active:scale:95'}>
+                    <div key={index} className={'relative shrink-0 rounded-lg shadow min-w-30 max-w-30 max-h-40 cursor-pointer hover:shadow lg transition-all duration-200 bg-linear-to-b from-orange500 to=orange-600 hover:from-roange-700 to-orange-800 active:scale-95'}>
                         <img src={story.user.profile_picture} alt=""
                         className='absolute size-8 top-3 left-3 z-10 rounded-full ring ring-gray-100 shadow'/>
                         <p className='absolute top-18 left-3  text-white/60 text-sm truncate max-w-24'>{story.content}</p>
-                        <p className='text-white absolute bottom-1 right-2 z-10 text xs'>{story.createdAt}</p>
+                        <p className='text-white absolute bottom-1 right-2 z-10 text-xs'>{moment(story.createdAt).fromNow()}</p>
+                        {
+                            story.media_type !== 'text' && (
+                                <div className='absolute inset-0 z-1 rounded-lg bg-black overflow-hidden'>
+                                    {
+                                       story.media_type === "image" ?
+                                       <img src={story.media_url} alt="" className='h-full w-full object-cover hover:scale-110 transition dusration-500 opacity-70 hover:opacity-80'/>
+                                       :
+                                       <video src={story.media_url} className='h-full w-full object-cover hover:scale-110 transition duration-500 opacity-70 hover:opacity-80'/>
+                                    }
+                                </div>
+                            )
+                        }
+                        
                     </div>
 
                 ))    
