@@ -35,7 +35,7 @@ const StoryModal = ({setShowModal, fetchStories}) => {
                 <span className="w-10"></span>
             </div>
 
-            <div className='rounded-lg h-96 flex items-center justify-center relative' style={{backgroundColor: background}}>
+            <div className='rounded-lg h-96 flex items-center justify-center relative' style={{background_color: background}}>
 
                 {mode == 'text' && (
                     <textarea className='bg-transparent text-white w-full h-full p-6 text-lg resize-none focus:outline-none' placeholder="What's on your mind?" onChange={(e)=>setText(e.target.value)} value={text}/>
@@ -54,7 +54,7 @@ const StoryModal = ({setShowModal, fetchStories}) => {
 
             <div className='flex mt-4 gap-2'>
                 {bgColors.map((color)=>(
-                    <button key={color} className='w-6 h-6 rounded-full ring cursor-pointer' style={{backgroundColor: color}} onClick={()=>setBackground(color)}/>
+                    <button key={color} className='w-6 h-6 rounded-full ring cursor-pointer' style={{background_color: color}} onClick={()=>setBackground(color)}/>
                 ))}
             </div>
 
