@@ -66,10 +66,6 @@ const StoryModal = ({setShowModal, fetchStories}) => {
                     <input onChange={(e)=>{handleMediaUpload(e); setMode('media')}} type="file" accept='image/*, video/*' className='hidden' />
                     <Upload size={18}/> Photo/Video
                 </label>
-
-                <label htmlFor="">
-                    <input type="file" accept='image/*, video/*' className='hidden'/>
-                </label>
             </div>
             <button onClick={()=> toast.promise(handleCreateStory(), {loading: ' Saving...',
                 success: <p>Story Added</p>,

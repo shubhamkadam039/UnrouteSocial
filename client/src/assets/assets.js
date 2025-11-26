@@ -67,7 +67,7 @@ export const dummyStoriesData = [
         "content": "📌 This isn't the story I wanted to tell… not yet. But if you're reading this, know that something interesting is in motion 🔄. The next post will make more sense 🧩.",
         "media_url": "",
         "media_type": "text",
-        "background_color": "#4f46e5",
+        "background_color": "#ff4600",
         "createdAt": "2025-11-25T00:07:06.958Z",
         "updatedAt": "2025-07-25T08:16:06.958Z",
     },

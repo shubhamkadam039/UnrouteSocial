@@ -17,7 +17,7 @@ const app = () => {
   const {user} = useUser()
   return (
     <>
-     <Toaster/>
+     <Toaster />
      <Routes>
         <Route path ='/' element ={ !user ? <Login/> : <Layout/>}>
           <Route index element ={<Feed/>}/>
