@@ -10,3 +10,12 @@
 .no-scrollbar::-webkit-scrollbar{
   display: none;
 }
+
+html,
+body,
+#root {
+  height: 100vh;     /* fill the viewport */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  /* stop the window itself from scrolling */
+}

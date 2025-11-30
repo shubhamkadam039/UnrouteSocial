@@ -21,7 +21,7 @@ const discover = () => {
     }
   }
   return (
-    <div className='min-h-screen bg-linear-to-b from-slate-50 to-white'>
+    <div className='min-h-full bg-linear-to-b from-slate-50 to-white'>
       <div className='max-w-6xl mx-auto p-6'>
         {/* Title */}
       <div className='mb-8'>

@@ -12,11 +12,11 @@ const layout = () => {
     const[sidebarOpen, setSidebarOpen] = useState(false)
 
   return user ? (
-    <div className='w-full flex h-screen'>
+    <div className='w-full flex h-screen overflow-hidden'>
 
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
 
-      <div className='flex-1 bg-slate-50'>
+      <div className='flex-1 bg-slate-50 overflow-y-auto'>
         <Outlet/>
       </div>
       {
