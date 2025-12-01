@@ -276,6 +276,94 @@ export const dummyMessagesData = [
         "updatedAt": "2025-08-25T10:43:50.346Z",
         "seen": true
     },
+    {
+        "_id": "6878cc3217a54e4d37480122",
+        "from_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "to_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "text": "",
+        "message_type": "image",
+        "media_url": "https://images.pexels.com/photos/106341/pexels-photo-106341.jpeg",
+        "createdAt": "2025-07-17T10:10:58.524Z",
+        "updatedAt": "2025-07-25T10:43:50.346Z",
+        "seen": true
+    },
+    {
+        "_id": "6878cc3c17a54e4d3748012f",
+        "from_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "to_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "text": "This is a Samsung Tablet",
+        "message_type": "text",
+        "media_url": "",
+        "createdAt": "2025-07-17T10:11:08.437Z",
+        "updatedAt": "2025-07-25T10:43:50.346Z",
+        "seen": true
+    },
+    {
+        "_id": "68835ffc6e4b42b685069def",
+        "from_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "to_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "text": "yah , this tablet is good",
+        "message_type": "text",
+        "media_url": "",
+        "seen": false,
+        "createdAt": "2025-07-25T10:44:12.753Z",
+        "updatedAt": "2025-07-25T10:44:12.753Z",
+    },
+        {
+        "_id": "6878cc2817a54e4d3748010c",
+        "from_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "to_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "text": "you can purchase it from amazon",
+        "message_type": "text",
+        "media_url": "",
+        "createdAt": "2025-08-17T10:10:48.956Z",
+        "updatedAt": "2025-08-25T10:43:50.346Z",
+        "seen": true
+    },
+    {
+        "_id": "6878cc3217a54e4d37480122",
+        "from_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "to_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "text": "",
+        "message_type": "image",
+        "media_url": "https://images.pexels.com/photos/106341/pexels-photo-106341.jpeg",
+        "createdAt": "2025-07-17T10:10:58.524Z",
+        "updatedAt": "2025-07-25T10:43:50.346Z",
+        "seen": true
+    },
+    {
+        "_id": "6878cc3c17a54e4d3748012f",
+        "from_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "to_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "text": "This is a Samsung Tablet",
+        "message_type": "text",
+        "media_url": "",
+        "createdAt": "2025-07-17T10:11:08.437Z",
+        "updatedAt": "2025-07-25T10:43:50.346Z",
+        "seen": true
+    },
+    {
+        "_id": "68835ffc6e4b42b685069def",
+        "from_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "to_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "text": "yah , this tablet is good",
+        "message_type": "text",
+        "media_url": "",
+        "seen": false,
+        "createdAt": "2025-07-25T10:44:12.753Z",
+        "updatedAt": "2025-07-25T10:44:12.753Z",
+    },
+        {
+        "_id": "6878cc2817a54e4d3748010c",
+        "from_user_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
+        "to_user_id": "user_2zwZSCMRXQ9GaEEVLgm6akQo96i",
+        "text": "you can purchase it from amazon",
+        "message_type": "text",
+        "media_url": "",
+        "createdAt": "2025-08-17T10:10:48.956Z",
+        "updatedAt": "2025-08-25T10:43:50.346Z",
+        "seen": true
+    },
 ]
 
 export const dummyConnectionsData = [
