@@ -3,7 +3,7 @@ import { dummyConnectionsData } from '../assets/assets'
 import { Eye, MessageSquare } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
-const messages = () => {
+const Messages = () => {
 
   const navigate = useNavigate()
 
@@ -44,4 +44,4 @@ const messages = () => {
   )
 }
 
-export default messages
+export default Messages

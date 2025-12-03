@@ -5,7 +5,7 @@ import Storiesbar from '../components/Storiesbar'
 import PostCard from '../components/PostCard'
 import RecentMessages from '../components/RecentMessages'
 
-const feed = () => {
+const Feed = () => {
 
   const [feeds, setFeeds] = useState([])
   const [loading, setloading] = useState(true)
@@ -51,4 +51,4 @@ const feed = () => {
 )
 }
 
-export default feed
+export default Feed

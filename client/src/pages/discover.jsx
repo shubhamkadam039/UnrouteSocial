@@ -4,7 +4,7 @@ import { Search } from 'lucide-react'
 import UserCard from '../components/UserCard'
 import Loading from '../components/Loading'
 
-const discover = () => {
+const Discover = () => {
 
   const [input, setInput] = useState('')
   const [users, setUsers] = useState(dummyConnectionsData)
@@ -55,4 +55,4 @@ const discover = () => {
 }
 
 
-export default discover
+export default Discover
