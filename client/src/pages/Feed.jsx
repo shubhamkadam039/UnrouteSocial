@@ -27,7 +27,7 @@ const Feed = () => {
         <Storiesbar />
         <div className='p-4 space-y-6'>
           {feeds.map((post)=>(
-            <PostCard key={post.id} post={post} />
+            <PostCard key={post._id} post={post} />
           ))}
         </div>
       </div>
