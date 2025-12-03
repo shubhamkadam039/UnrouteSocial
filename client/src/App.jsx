@@ -11,7 +11,7 @@ import Chatbox from './pages/Chatbox'
 import Connections from './pages/Connections'
 import Discover from './pages/Discover'
 import Profile from './pages/Profile'
-import CreatePost from './pages/Createpost'
+import CreatePost from './pages/CreatePost'
 
 
 const App = () => {
