@@ -5,7 +5,8 @@ const userSchema = new mongoose.Schema({
     email:  {type: String, required:true },
     full_name: {type: String, required:true },
     username: {type: String, unique:true },
-    Profile_picture: {type: String, default: '' },
+    bio: {type: String, default: 'Hey there! I am using Unroute Social. ' },
+    profile_picture: {type: String, default: '' },
     cover_photo: {type: String, default: '' },
     location: {type: String, default: '' },
     followers: [{type: String, ref: 'User'}],
@@ -13,6 +14,6 @@ const userSchema = new mongoose.Schema({
     connections: [{type: String, ref: 'User'}],
 },{timestamps: true, minimize: false})
 
-const User = mongoose.model('User' , userSchema)
+const Users = mongoose.model('User' , userSchema)
 
-export default User
+export default Users

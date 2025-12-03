@@ -1,5 +1,8 @@
 import { Inngest } from "inngest";
+import connectDB from "../configs/db.js";
 import User from "../models/User.js";
+
+connectDB();
 
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "UnrouteSocial-app" });
@@ -10,23 +13,25 @@ const syncUserCreation = inngest.createFunction(
     {event: 'clerk/user.created'},
     async ({event}) => {
         const {id, first_name, last_name, email_addresses, image_url} = event.data
-        let username = email_addresses[0].email_address.split('@git checkout')[0]
+        let username = email_addresses[0].email_address.split('@')[0]
 
         //check availability of username in the database
         const user = await User.findOne({username})
 
         if (user) {
-            useername = username + Math.floor(Math.random() * 10000)
+            username = username + Math.floor(Math.random() * 10000)
         }
         
         const userData = {
             _id: id,
-            email: email_addressess[0].email_address,
+            email: email_addresses[0].email_address,
             full_name: first_name + " " + last_name,
             profile_picture: image_url,
             username
         }
-        await User.create(userData)
+        console.log("Creating user:", userData);
+        await User.create(userData);
+        console.log("User created");
     }
 )
 
@@ -37,8 +42,8 @@ const syncUserUpdation = inngest.createFunction(
     async ({event}) => {
         const {id, first_name, last_name, email_addresses, image_url} = event.data
         
-        const userData = {
-            email: email_addressess[0].email_address,
+        const updatedUserData = {
+            email: email_addresses[0].email_address,
             full_name: first_name + " " + last_name,
             profile_picture: image_url
     }
