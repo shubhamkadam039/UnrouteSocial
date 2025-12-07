@@ -6,14 +6,12 @@ console.log("LOADED ENV:", process.env.MONGODB_URL);
 import express from 'express';
 import { serve } from 'inngest/express';    
 import cors from 'cors';
-import connectDB from './configs/db.js';
-import {inngest, functions} from './inngest/index.js'; 
+import connectDB from '../server/configs/db.js';
+import {inngest, functions} from '../server/inngest/index.js'; 
 import { clerkMiddleware } from '@clerk/express'
-import userRouter from './routes/userRoutes.js';
+import userRouter from '../server/routes/userRoutes.js';
 
 const app = express();
-
-await connectDB();
 
 // Middlewares
 app.use(express.json());
