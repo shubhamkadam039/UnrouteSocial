@@ -13,8 +13,6 @@ import userRouter from './routes/userRoutes.js';
 
 const app = express();
 
-await connectDB();
-
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
