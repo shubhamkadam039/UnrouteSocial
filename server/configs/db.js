@@ -8,10 +8,10 @@ const connectDB = async () => {
         await mongoose.connect(`${process.env.MONGODB_URL}/UnrouteSocial`)
         console.log('MongoDB connected successfully')
     } catch (error) {
-        console.log(error.message)
-        process.exit(1)
+        console.error("MongoDB connection error:", error.message);
+    throw error;    // let the caller handle it
     }
     
-}
+};
 
 export default connectDB
