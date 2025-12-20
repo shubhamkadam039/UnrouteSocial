@@ -24,6 +24,7 @@ export const getUserData = async (req, res) => {
 export const updateUserData = async (req, res) => {
     try {
         const { userId } = req.auth()
+        console.log("Userid: ", userId)
         let {username, bio, location, full_name} = req.body;
 
         const tempUser = await Users.findById(userId)
